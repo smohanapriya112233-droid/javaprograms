@@ -1,0 +1,47 @@
+/*1) We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling.
+We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.*/
+
+//method 1
+public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+  if (aSmile && bSmile) {
+    return true;
+  }
+  if (!aSmile && !bSmile) {
+    return true;
+  }
+  return false;
+
+//method 2
+public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+  if(!aSmile ^ bSmile)
+  {
+    return true;
+  }
+  return false;
+}
+
+
+/* 2) Given two int values, return their sum. Unless the two values are the same, then return double their sum.
+
+sumDouble(1, 2) → 3
+sumDouble(3, 2) → 5
+sumDouble(2, 2) → 8*/
+
+// method 1
+public int sumDouble(int a, int b) {
+ int sum=a+b;
+  
+  if(a==b)
+  {
+    sum=sum*2;
+  }
+  return sum;
+}
+
+// method 2
+
+public int sumDouble(int a, int b)
+{
+  return (a == b) ? (a + b) * 2 : (a + b);
+}
+
