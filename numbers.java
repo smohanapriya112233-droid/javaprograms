@@ -1,4 +1,4 @@
-// extract the digit
+//1)extract the digit
 
 class demo
 {
@@ -14,7 +14,7 @@ n=n/10;
 }
 }
 
-//count the digit
+//2)count the digit
 //method 1
 class count
 {
@@ -55,4 +55,86 @@ System.out.println(len);
 }
 }
 
+//3)reverse the number
+//method 1
+class demo
+{
+public static void  main(String[] args)
+{
+int a=12345;
+int rev=0;
+while(a!=0)
+{
+int d=a%10;
+rev=rev*10+d;
+a=a/10;
+}
+System.out.print(rev);
+}
+}
+
+//method 2
+class demo
+{
+public static void main(String[] args)
+{
+int i=12345;
+for(i=5;i>0;i--)
+System.out.println(i);
+}
+}
+
+// 4)min and max number
+class demo
+{
+public static void main(String[] args)
+{
+int n =12345;
+int max=0;
+int min=9;
+while(n>0)
+{
+int digit=n%10;
+if(digit>max)
+{
+max=digit;
+}
+else if(digit<min)
+{
+ min=digit;
+}
+
+n=n/10;
+}
+System.out.println(max);
+System.out.println(min);
+}
+}
+
+
+// 5)Odd Even count
+class demo
+{
+public static void main(String[] args)
+{
+int n =123456789;
+int oddcount=0;
+int evencount=0;
+while(n>0)
+{
+int d=n%10;
+if(d%2==0)
+{
+evencount++;
+}
+else
+{
+oddcount++;
+}
+n=n/10;
+}
+System.out.println(oddcount);
+System.out.println(evencount);
+}
+}
 
