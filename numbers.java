@@ -138,3 +138,29 @@ System.out.println(evencount);
 }
 }
 
+//6) palindrome or not
+class demo
+ {
+  public static void main(String[] args)
+  {
+   int x=121;
+   int org=x;
+   int rev=0;
+   while(x>0)
+    {
+     int d=x%10;
+     rev=rev*10+d;
+     x=x/10;
+    }
+   if(org==rev)
+   {
+    return true;
+   }
+   else
+   {
+    return false;
+   }
+  }
+ }
+
+//7)
