@@ -163,4 +163,121 @@ class demo
   }
  }
 
-//7)
+//7)factorial number
+import java.util.Scanner;
+class factorial
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int n=sc.nextInt();
+        int fact=1;
+        for(int i=1;i<=n;i++)
+        {
+            fact=fact*i;
+        }
+        System.out.println(fact);
+    }
+}
+
+//8)fibonacci number
+import java.util.Scanner;
+class fibonacci 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int n=sc.nextInt();
+        int a=0;
+        int b=1;
+        System.out.println("Fiboacci series:");
+        for(int i=2;i<=n;i++)
+        {
+            System.out.print(a +" ");
+            int c=a+b;
+            a=b;
+            b=c;
+        }
+       
+    }
+}
+
+//9)leap year or not
+import java.util.Scanner;
+class number
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the year:");
+        int n=sc.nextInt();
+        if(n%4==0)
+        {
+            System.out.println(n +" " +"is leap year");
+        }
+        else if(n%400==0)
+        {
+            System.out.println(n +" "+"is not a leap year");
+        }
+        else if(n%100==0)
+        {
+            System.out.println(n +" "+"is leap year");
+        }
+        else
+        {
+            System.out.println(n +" "+"not a leap year");
+        }
+    }
+}
+
+10)prime number
+import java.util.Scanner;
+class number{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int n=sc.nextInt();
+        int count=0;
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            count++;
+        }
+        if(count==2)
+        {
+            System.out.println(n +" "+"is a prime number");
+        }
+        else
+        {
+             System.out.println(n +" "+"is not a prime number");
+        }
+    }
+}
+
+//11)composite number or not
+import java.util.Scanner;
+class number{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int n=sc.nextInt();
+        int count=0;
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            count++;
+        }
+        if(count>2)
+        {
+            System.out.println(n +" "+"is a composite number");
+        }
+        else
+        {
+             System.out.println(n +" "+"is not a composite number");
+        }
+    }
+}
